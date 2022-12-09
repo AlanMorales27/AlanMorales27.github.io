@@ -1,0 +1,660 @@
+/*Fuentes de Letra*/
+
+/*Word Sans*/
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap'); 
+/*Alata*/
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Work+Sans:wght@500&display=swap'); 
+/*Poppins*/
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Poppins:wght@300&family=Work+Sans:wght@500&display=swap'); 
+/*Montserrat*/
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Montserrat:wght@500&family=Poppins:wght@200&family=Work+Sans:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Estilo Cabecera */
+    #inicio{
+        background: linear-gradient(rgba(0,0,0,.7),rgba(179, 107, 107, 0.7)), url(Imagenes/IntArtificial.png);
+        background-size: cover;
+        background-position:center center;
+        height: 100vh;
+    }
+
+        #inicio .contenido header{
+            background-color:rgba(0, 0, 0, 0.7);
+            position: relative;
+            width: 100%;
+            z-index: 100;
+            top: 0;
+        }
+
+            #inicio .contenido header .contenido-header{
+                max-width: 1900px;
+                margin: auto;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 20px 20px;
+            }
+                /*Titulo esquina*/
+                #inicio .contenido header .contenido-header h1{
+                    font-size: 20px;
+                    text-align: left;
+                    color: rgb(255, 255, 255);
+                    font-family: 'Alata';
+                }
+                /*Secciones (Texto)*/
+                #inicio .contenido header .contenido-header nav ul{
+                    list-style: none;
+                    display: flex;
+                    align-items: center;
+                }
+
+                #inicio .contenido header .contenido-header nav ul li a{
+                    font-family: 'Montserrat';
+                    font-size: 18px;
+                    text-decoration: none;
+                    color: #fff;
+                    margin: 0 20px;
+                    font-weight: 400;
+                    transition: .5s;
+                }
+                    #inicio .contenido header .contenido-header nav ul a:hover{
+                        color: #f3255c;
+                    }
+
+                /*Icono responsive*/
+                #icono-nav{
+                    color: #fff;
+                    display: none;
+                }
+            
+                /*Redes*/
+                #inicio .contenido header .contenido-header .redes a{
+                    text-decoration:none;
+                    color: #fff;
+                    display: inline-block;
+                    margin-left: 10px;
+                    transition: .5s;
+                }
+                    #inicio .contenido header .contenido-header .redes a:hover{
+                        color: #f3255c;        
+                    }
+                
+                #inicio .contenido header .contenido-header .redes .blog{
+                    font-size: 15px;
+                    letter-spacing: 2px;
+                    font-weight: bold;
+
+                    margin: auto 10px;
+                    padding: 2px 15px;
+                    border: 1px solid #fff;
+                    border-radius: 25px;
+                    transition: .5s
+                }
+
+                    #inicio .contenido header .contenido-header .redes .blog:hover{
+                        background-color: #f3255c;
+                        color: #fff;
+                    }
+
+    /*Presentacion*/
+    #inicio .contenido .presentacion{
+        max-width: 1100px;
+        height: 90vh;
+        margin: auto;
+        columns: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+        /* Imagen */
+        #inicio .contenido .presentacion .portada {
+            margin: 0 auto;
+            height: auto;
+            width: 50%;
+            float: left;
+        }
+
+            #inicio .contenido .presentacion .portada img {
+                width: 70%;
+                border-radius: 30px;
+            }
+
+        /*Descripcion y presentacion*/
+        #inicio .contenido .presentacion .des {
+            height: 100%;
+            margin: 0 auto;
+            height: auto;
+            width: 50%;
+            float: right;
+            
+        }
+            /*Texto de titulo*/
+            #inicio .contenido .presentacion .des .bienvenida{
+                font-size: 20px;
+                margin-bottom: auto;
+                text-transform: uppercase;
+                letter-spacing: 5px;
+                text-align: center;
+                color: #fff;
+            }
+
+            #inicio .contenido .presentacion .des h2{
+                font-size: 50px;
+                margin-bottom: 20px;
+                text-align: center;
+                color: #fff;
+                font-family: 'Alata';
+            }
+            
+                #inicio .contenido .presentacion .des h2 span{
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    font-size: 35px;
+                    color:#f3255c;
+                }
+
+            #inicio .contenido .presentacion .des .descripcion{
+                max-width: 700px;
+                margin: 25px auto; 
+                font-size: 18px;
+                text-align: center;
+                color: #fff;
+            }
+
+            #inicio .contenido .presentacion .des a{
+
+                /*Texto*/
+                text-decoration: none;
+                letter-spacing: 3px;
+                color: #fff;
+                font-weight: bold;
+                text-transform: uppercase;
+                
+                /*Caja*/
+                display: inline-block;
+                margin: 15px 185px;
+                padding: 20px 25px;
+                border: 2px solid #fff;
+                border-radius: 50px;
+                transition: .5s
+
+            }
+
+            #inicio .contenido .presentacion .des a:hover{
+                background-color: #f3255c;
+
+            }
+
+/*Seccion 'Acerca de mi'*/
+
+#sobremi{
+    max-width: 1200px;
+    margin: auto;
+    padding: 100px 15px;
+    color: #111135;
+    display: flex;
+
+}
+    /*Estilo Foto*/
+    #sobremi .contenedor-foto{
+        max-width: 500px;
+        margin-right: 70px;
+    }
+
+        #sobremi .contenedor-foto img{
+            padding: 20px;
+            width: 400px;
+            border-radius: 20px;
+            background-color: #5a736924;
+
+        }
+    /*Estilo Texto*/
+    #sobremi .sobremi{
+        margin: 0 70px;
+    }    
+        #sobremi .sobremi .titulo-seccion{
+            font-size: 22px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #111135;
+            text-decoration: underline;
+            text-decoration-color: #5a73697c;
+            text-decoration-thickness: 5px;
+        }
+
+        #sobremi .sobremi h2{
+            font-size: 40px;
+            font-weight: bold;
+            margin: 25px 0;
+            letter-spacing: 2px;
+            font-family: 'Alata';
+        }
+            #sobremi .sobremi h2 span{
+                color: #f3255c;
+            }
+
+        #sobremi .sobremi h3{
+            font-size: 18px;
+            font-weight: 500;
+            text-transform: uppercase;
+            margin: -33px auto;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+            font-weight: bold;
+        }
+
+        #sobremi .sobremi p{
+            text-align: justify;
+            font-family: 'Poppins';
+            font-size: 14px;
+            line-height: 23px;
+            color: #565656;
+            margin-bottom: 12px;
+        }
+        
+        /*Boton hoja de vida*/
+        #sobremi .sobremi a{
+            display: inline-block;
+            text-decoration: none;
+            color: #000;
+            border-radius: 30px;
+            padding: 10px 20px;
+            border: 1px solid #000;
+            margin-top: 30px;
+            transition: .5s;
+        }
+            #sobremi .sobremi a:hover{
+                background-color: #f3255c;
+                color: #fff;
+            }
+
+/*Seccion Habilidades*/
+.contenedor-skills{
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #f3255c96), url(Imagenes/Skills.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 100px 0;
+    text-align: center;
+}
+.contenedor-skills h2{
+    font-size: 40px;
+    color: #fff;
+    font-family: 'Alata';
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+.contenedor-skills h3{
+    margin: 40px;
+    color: #fff;
+    font-family: 'Alata';
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+    /*Barra de progreso*/
+    .contenedor-skills .skills{
+        max-width: 600px;
+        margin: 30px auto;
+    }
+        .contenedor-skills .skills .info{
+            display: flex;
+            justify-content: space-between;
+        }
+            .contenedor-skills .skills .info p{
+                color: #fff;
+                font-family: 'Alata';
+                font-weight: bold;
+            }
+            .contenedor-skills .skills .info .porcentaje{
+                color: #fff;
+                font-family: 'Alata';
+                font-weight: bold;
+            }
+
+        .contenedor-skills .skills .lista{
+            display: inline-block;
+            margin-right: 20px;
+            height: 10px;
+            width: 10px;
+            background-color: #fff;
+        }
+        .contenedor-skills .skills .barra{
+            background-color: #919191;
+            width: 600px;
+            height: 6px;
+            margin: 10px 0;
+        }
+            .contenedor-skills .skills .barra .barra-progreso1{
+                background-color: #fff;
+                width: 80%;
+                height: 6px;
+                animation: progreso1 2s forwards;
+            }
+            .contenedor-skills .skills .barra .barra-progreso2{
+                background-color: #fff;
+                width: 60%;
+                height: 6px;
+                animation: progreso2 2s forwards;
+            }
+            .contenedor-skills .skills .barra .barra-progreso3{
+                background-color: #fff;
+                width: 30%;
+                height: 6px;
+                animation: progreso3 2s forwards;
+            }
+            .contenedor-skills .skills .barra .barra-progreso4{
+                background-color: #fff;
+                width: 20%;
+                height: 6px;
+                animation: progreso4 2s forwards;
+            }
+            .contenedor-skills .skills .barra .barra-progreso5{
+                background-color: #fff;
+                width: 15%;
+                height: 6px;
+                animation: progreso5 2s forwards;
+            }
+            .contenedor-skills .skills .barra .barra-progreso6{
+                background-color: #fff;
+                width: 65%;
+                height: 6px;
+                animation: progreso6 2s forwards;
+            }
+            .contenedor-skills .skills .barra .barra-progreso7{
+                background-color: #fff;
+                width: 50%;
+                height: 6px;
+                animation: progreso7 2s forwards;
+            }
+            .contenedor-skills .skills .barra .barra-progreso8{
+                background-color: #fff;
+                width: 40%;
+                height: 6px;
+                animation: progreso8 2s forwards;
+            }
+            .contenedor-skills .skills .barra .barra-progreso9{
+                background-color: #fff;
+                width: 60%;
+                height: 6px;
+                animation: progreso9 2s forwards;
+            }
+            .contenedor-skills .skills .barra .barra-progreso10{
+                background-color: #fff;
+                width: 40%;
+                height: 6px;
+                animation: progreso10 2s forwards;
+            }
+            .contenedor-skills .skills .barra .barra-progreso11{
+                background-color: #fff;
+                width: 20%;
+                height: 6px;
+                animation: progreso11 2s forwards;
+            }
+
+
+
+
+            /*Animacion para las barras*/
+            @keyframes progreso1{
+                0% {
+                    width: 0;
+                }
+                100% {
+                    width: 80%;
+                }
+            }
+            @keyframes progreso2{
+                0% {
+                    width: 0;
+                }
+                100% {
+                    width: 60%;
+                }
+            }
+            @keyframes progreso3{
+                0% {
+                    width: 0;
+                }
+                100% {
+                    width: 30%;
+                }
+            }
+            @keyframes progreso4{
+                0% {
+                    width: 0;
+                }
+                100% {
+                    width: 20%;
+                }
+            }
+            @keyframes progreso5{
+                0% {
+                    width: 0;
+                }
+                100% {
+                    width: 15%;
+                }
+            }
+            @keyframes progreso6{
+                0% {
+                    width: 0;
+                }
+                100% {
+                    width: 65%;
+                }
+            }
+            @keyframes progreso7{
+                0% {
+                    width: 0;
+                }
+                100% {
+                    width: 50%;
+                }
+            }
+            @keyframes progreso8{
+                0% {
+                    width: 0;
+                }
+                100% {
+                    width: 40%;
+                }
+            }
+            @keyframes progreso9{
+                0% {
+                    width: 0;
+                }
+                100% {
+                    width: 60%;
+                }
+            }
+            @keyframes progreso10{
+                0% {
+                    width: 0;
+                }
+                100% {
+                    width: 40%;
+                }
+            }
+            @keyframes progreso11{
+                0% {
+                    width: 0;
+                }
+                100% {
+                    width: 20%;
+                }
+            }
+
+/*Seccion Portafolio*/
+
+#portafolio{
+    max-width: 1100px;
+    padding: 100px 0;
+    margin: auto;
+}
+    #portafolio .titulo-seccion{
+        font-family: 'Alata';
+        text-align: center;
+        font-size: 22px;
+        text-transform: uppercase;
+        color: #111135;
+        text-decoration: underline;
+        text-decoration-color: #d3d3d3;
+        text-decoration-thickness: 5px;
+    }
+
+    #portafolio .fila{
+        display: flex;
+        justify-content: space-between;
+        margin: 30px 0;
+    }
+
+        #portafolio .fila .proyecto{
+            max-width: 600px;
+            border: 1px solid #000;
+            margin: 0 10px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        #portafolio .fila .proyecto img{
+            width: 300px;
+            height:300px;
+            filter: grayscale(1);
+            object-fit: cover;
+            transition: .5s;
+        }
+            #portafolio .fila .proyecto:hover img{
+                filter: grayscale(0);
+            }
+        
+        #portafolio .fila .proyecto .info{
+            position: absolute;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #f3255c;
+            width: 100%;
+            padding: 10px;
+            opacity: 0;
+            bottom: -40px;
+            transition: .5s;
+        }
+            #portafolio .fila .proyecto:hover .info{
+                opacity: 1;
+                bottom: 0;
+            }
+
+/*Seccion Contacto*/
+#contacto {
+    padding: 100px 15px;
+}
+
+    #contacto .titulo-seccion{
+        font-family: 'Alata';
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 22px;
+        text-transform: uppercase;
+        color: #111135;
+        text-decoration: underline;
+        text-decoration-color:#d3d3d3;
+        text-decoration-thickness: 5px;
+    }  
+
+    #contacto .contenedor-form{
+        max-width: 1100px;
+        margin:auto;
+    } 
+        #contacto .contenedor-form .fila{
+            margin-bottom: 15px;
+        }
+
+        #contacto .contenedor-form .mitad{
+            display: flex;
+            justify-content: space-between;
+        }
+
+            #contacto .contenedor-form .mitad input{
+                width: 48%;
+            }
+
+        #contacto .contenedor-form input,
+        #contacto .contenedor-form textarea{
+            padding: 20px;
+            border-radius: 20px;
+            border: none;
+            border: 1px solid #919191;
+        }
+        #contacto .contenedor-form .input-full{
+            width: 100%;
+        }
+    
+    #contacto .btn-enviar{
+        display: block;
+        margin: auto;
+        cursor: pointer;
+        transition: .5s;
+        padding: 10px 15px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+        #contacto .btn-enviar:hover{
+            background-color: #f3255c;
+            color: #fff;
+        }
+    
+footer{
+    background-color: #000;
+    color: #fff;
+    text-align:center;
+    padding: 30px 0;
+}
+    footer a{
+        text-decoration:none;
+        color: #fff;
+        display: inline-block;
+        margin: 5px;
+        font-size: 26px;
+    }
+
+/*Responsive*/
+@media screen and (max-width:800px) {
+    .redes{
+        display: none;
+    }    
+    nav{
+        display: none;
+    }
+    nav.responsive{
+        display: block;
+        background-color:rgba(0, 0, 0, 0.8);
+        width: 100%;
+        position: absolute;
+        top: 48px;
+        left: 0;
+        padding: 10px 0;
+    }
+
+    nav.responsive ul{
+        display: block !important;
+        text-align: center;
+    }
+
+    nav.responsive ul li{
+        margin: 5px 0;
+
+    }
+    #icono-nav{
+        display:block;
+    }
+}
